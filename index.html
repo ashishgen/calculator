@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+</head>
+<body>
+    <h1 Scientific style="color:rgb(86, 6, 7);text-align: center;">Scientific calculator </h1>
+    <div>
+        <style>
+            input[type="text"]
+        {
+            font-size:45px;
+            font-weight: bold;
+            text-align: right;
+            direction: ltr;
+
+        }
+            table,
+            th,
+            td {
+                border: 4px solid black;
+            }
+            th,
+            button {
+                font-size: 30px;
+            }
+            .button {
+                background-color: hsl(277, 34%, 72%);
+
+                color: white;
+                padding: 15px 60px;
+                text-align: center;
+                font-size: 30px;
+            }
+        </style>
+        <table
+            style="width:30% ;position: relative; right:100%;left:300px; top: 10px; height:10cm; padding: 120;text-align: center;">
+            <tr>
+                <th colspan="4" style="background-color: black;">
+                    <div><input type="text"  id="display" class="display" name="text_name"
+                            style="width: 600px;height: 1cm; padding: 2mm;top: padding 1mm; border: 4px solid black;">
+                    </div>
+    </div>
+    </th>
+    </th>
+    <tr>
+        <th><button style="padding: 23px 125px; background-color:red ;" class="button" id="deletebtn"
+                onclick="enterdelete()">D</button></th>
+        <th><button style="padding: 23px 93px; background-color:green ;" class="button" id="clearbtn"
+                onclick="enterclear()">C</button></th>
+
+        <th><button style="padding: 22px 82px; background-color:rgb(50, 12, 144) ;" class="button" id="square "
+                onclick="enterFirstNumber()">sq</button></th>
+
+        <th><button style="padding: 22px 83px; background-color:rgb(223, 20, 162) ;" class="button" id="cube"
+                onclick="enterFirstNumber()">cu</button></th>
+    </tr>
+    <tr>
+        <th><button style="padding: 20px 126px;" class="button" id="1" onclick="enterone('1')">1</button></th>
+        <th><button style="padding: 20px 95px;" class="button" id="2" onclick="entertwo('2')">2</button></th>
+        <th><button style="padding: 20px 89px;" class="button" id="3" onclick="enterthree('3')">3</button></th>
+        <th><button style="padding: 20px 92px; background-color:rgb(75, 155, 247)" class="button" id="Multiply"
+                onclick="entermultiply('Multiply')">*</button></th>
+    </tr>
+    <tr>
+        <th><button style="padding: 20px 126px;" class="button" id="4" onclick="enterfour('4')">4</button></th>
+        <th><button style="padding: 20px 95px;" class="button" id="5" onclick="enterfive('5')">5</button></th>
+        <th><button style="padding: 20px 89px;" class="button" id="6" onclick="entersix('6')">6</button></th>
+        <th><button style="padding: 20px 94px;background-color:rgb(46, 8, 60)" class="button" id="/"
+                onclick="enterdivide('/')">/</button></th>
+    </tr>
+    <tr>
+        <th><button style="padding: 20px 126px;" class="button" id="7" onclick="enterseven('7')">7</button></th>
+        <th><button style="padding: 20px 95px;" class="button" id="8" onclick="entereight('8')">8</button></th>
+        <th><button style="padding: 20px 89px;" class="button" id="9" onclick="enternine('9')">9</button></th>
+        <th><button style="padding: 20px 92px;background-color:rgb(232, 225, 27)" class="button" id="-"
+                onclick="entersubtract('-')">-</button></th>
+    </tr>
+    <tr>
+        <th><button style="padding: 20px 126px;" class="button" id="0" onclick="enterzero('0')">0</button></th>
+        <th><button style="padding: 20px 86px;" class="button" id="00" onclick="enterdbzero('00')">00</button></th>
+        <th><button style="padding: 20px 92px;" class="button" id="." onclick="enterdecimal('.')">.</button></th>
+        <th><button style="padding: 20px 89px;background-color:rgb(223, 118, 20)" class="button" id="+"
+                onclick="enteradd('+')">+</button></th>
+    </tr>
+    <tr>
+        <th><button style="padding: 20px 110px;background-color:rgb(231, 21, 154)" class="button" id="Log"
+                onclick="enterlog()">Log</button></th>
+        <th><button style="padding: 20px 91px;background-color:rgb(47, 20, 223)" class="button" id="%"
+                onclick="entermodulus('%')">%</button></th>
+
+        <th colspan="4"><button style="padding: 20px 194px;background-color:rgb(20, 223, 47)" class="button" id="equal"
+                onclick="enterequal('=')">=</button></th>
+
+    </tr>
+</tr>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
