@@ -124,7 +124,7 @@ Array.from(buttons).forEach((button)=>{
     }
      
     else if (e.target.innerHTML=='D'){
-      string = string.slice(1,-1);
+      string = string.slice(0,-1);
       document.querySelector('input').value = string;
     }
 
